@@ -10,7 +10,7 @@ public class customer {
     protected String telephoneNumber;
     protected String mailAddress;
 
-    public customer(String lastName, String firstName, Date dateOfBirthday, long identificationNumber, char gender, String telephoneNumber, String mailAddress)
+    /*public customer(String lastName, String firstName, Date dateOfBirthday, long identificationNumber, char gender, String telephoneNumber, String mailAddress)
     {
         this.lastName = lastName;
         this.firstName = firstName;
@@ -19,6 +19,13 @@ public class customer {
         this.gender = gender; //f or m, specified in the identity card
         this.telephoneNumber = telephoneNumber;
         this.mailAddress = mailAddress;
+    }*/
+
+    public customer()
+    {
+
+        this.firstName = "unknown";
+        this.lastName = "unknown";
     }
 
 

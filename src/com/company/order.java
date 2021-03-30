@@ -1,23 +1,29 @@
 package com.company;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class order {
 
     private int idOrder;
     private Date orderDate;
     private customer buyer;
-   // private ArrayList<product> products;
+    private int numberOfProducts;
+    private product myProduct;
+    private double total;
     private flowerShop seller;
 
-    public order (int idOrder, Date orderDate, customer buyer, flowerShop seller)
-    { //ArrayList<product> products,
-        this.idOrder= idOrder;
-        this.orderDate = orderDate;
-        this.buyer = buyer;
-      //  this.products = products;
-        this.seller = seller;
+
+
+    public order ()
+    {
+        this.idOrder = this.idOrder+1;
+        this.numberOfProducts = 0;
+        this.total = 0;
     }
+
+
+
+
 
     public void setIdOrder()
     {
@@ -29,14 +35,20 @@ public class order {
         this.orderDate = orderDate;
     }
 
+    public void setMyProduct(product myProduct) {
+        this.myProduct = myProduct;
+    }
+
+    public void setNumberOfProducts(int numberOfProducts) {
+        this.numberOfProducts = numberOfProducts;
+    }
+
     public void setBuyer()
     {
         this.buyer = buyer;
     }
 
-   // public void setProducts(ArrayList<product> products) {
-   //     this.products = products;
-   // }
+   // public void setProducts() {this.products = products;}
 
     public void setSeller()
     {
@@ -55,12 +67,20 @@ public class order {
         return buyer;
     }
 
- //  public ArrayList<product> getProducts() {
- //      return products;
-  // }
+ //    public ArrayList<product> getProducts() {
+ //   return products;
+ //}
 
     public flowerShop getSeller() {
         return seller;
+    }
+
+    public int getNumberOfProducts() {
+        return numberOfProducts;
+    }
+
+    public product getMyProduct() {
+        return myProduct;
     }
 
     @Override
@@ -69,8 +89,22 @@ public class order {
                 "idOrder=" + idOrder +
                 ", orderDate=" + orderDate +
                 ", buyer=" + buyer +
-              //  ", products=" + products +
+                ", numberOfProducts=" + numberOfProducts +
+                ", myProduct=" + myProduct +
+                ", total=" + total +
                 ", seller=" + seller +
                 '}';
+    }
+
+    public double calculateTotal()
+    {
+        double money = 0;
+       // for(product products: this.myProduct){
+
+            money = money + numberOfProducts*(myProduct.getProductPrice() );
+
+       // }
+
+        return money;
     }
 }

@@ -1,13 +1,19 @@
 package com.company;
 
 public class bouquet extends product {
+    private String nameFlowers;
     private int numberOfFlowers;
     private String colorOfFlowers;
-    public bouquet(String productName, double productPrice, int numberOfFlowers, String colorOfFlowers)
+    public bouquet(String productName, double productPrice, String nameFlowers, int numberOfFlowers, String colorOfFlowers)
     {
-        super(productName, productPrice);
+        super(productName,productPrice);
+        this.nameFlowers = nameFlowers;
         this.numberOfFlowers = numberOfFlowers;
         this.colorOfFlowers = colorOfFlowers;
+    }
+
+    public void setNameFlowers(String nameFlowers) {
+        this.nameFlowers = nameFlowers;
     }
 
     public void setNumberOfFlowers()
@@ -30,8 +36,7 @@ public class bouquet extends product {
         return colorOfFlowers;
     }
 
-    @Override
-    public double calculPromotie() {
-        return super.getProductPrice() * 0.1;
-    }
+
+
+
 }

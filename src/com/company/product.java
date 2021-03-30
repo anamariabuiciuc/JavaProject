@@ -1,6 +1,7 @@
 package com.company;
+import java.util.ArrayList;
 
-public abstract class product {
+public class product {
 
     protected String productName;
     protected double productPrice;
@@ -13,10 +14,9 @@ public abstract class product {
 
     @Override
     public String toString() {
-        return "product{"+
-                "name = " + productName + '\'' +
-                ", price = " + productName +
-                '}';
+        return
+                  productName +
+                " - " + productPrice +" RON";
     }
 
     public void setProductName()
@@ -39,6 +39,6 @@ public abstract class product {
         return productPrice;
     }
 
-    public abstract double calculPromotie();
+
 
 }
