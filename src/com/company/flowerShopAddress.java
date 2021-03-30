@@ -45,4 +45,15 @@ public class flowerShopAddress {
     {
         return town;
     }
+
+    @Override
+    public String toString() {
+        return "flowerShopAddress{" +
+                "county='" + county + '\'' +
+                ", town='" + town + '\'' +
+                ", street='" + street + '\'' +
+                ", number='" + number + '\'' +
+                ", postalCode=" + postalCode +
+                '}';
+    }
 }

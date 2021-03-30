@@ -1,12 +1,12 @@
 package com.company;
 
-public class birthdayDate{
+public class Date{
     private int day;
     private int month;
     private int year;
 
 
-    public birthdayDate(int day, int month, int year )
+    public Date(int day, int month, int year )
     {
         this.day = day;
         this.month = month;
@@ -45,4 +45,12 @@ public class birthdayDate{
 
     public void displayDate() { System.out.println(day+"."+month+"."+year); }
 
+    @Override
+    public String toString() {
+        return "Date{" +
+                day +
+                "." + month +
+                "." + year +
+                '}';
+    }
 }

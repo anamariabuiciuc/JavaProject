@@ -2,15 +2,15 @@ package com.company;
 
 public class customer {
 
-    private String lastName;
-    private String firstName;
-    private birthdayDate dateOfBirth;
-    private long identificationNumber; //cnp
-    private char gender; //f or m (specified in your identity card)
-    private String telephoneNumber;
-    private String mailAddress;
+    protected String lastName;
+    protected String firstName;
+    protected Date dateOfBirth;
+    protected long identificationNumber; //cnp
+    protected char gender; //f or m (specified in your identity card)
+    protected String telephoneNumber;
+    protected String mailAddress;
 
-    public customer(String lastName, String firstName, birthdayDate dateOfBirthday, long identificationNumber, char gender, String telephoneNumber, String mailAddress)
+    public customer(String lastName, String firstName, Date dateOfBirthday, long identificationNumber, char gender, String telephoneNumber, String mailAddress)
     {
         this.lastName = lastName;
         this.firstName = firstName;
@@ -24,16 +24,16 @@ public class customer {
 
     @Override
     public String toString() {
-        return "Client{" +
-                "Last name='" + lastName + '\'' +
-                ", First name=" + firstName + '\'' +
-                ", gender=" + gender + '\'' +
-                ", identificationNumber=" + identificationNumber + '\'' +
-                ", telephoneNumber='" + telephoneNumber+ '\'' +
-                ", mailAddress='" + mailAddress+ '\'' +
+        return "customer{" +
+                "lastName='" + lastName + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", identificationNumber=" + identificationNumber +
+                ", gender=" + gender +
+                ", telephoneNumber='" + telephoneNumber + '\'' +
+                ", mailAddress='" + mailAddress + '\'' +
                 '}';
     }
-
 
     public void setLastName()
     {
@@ -86,7 +86,7 @@ public class customer {
         return gender;
     }
 
-    public birthdayDate getDateOfBirth()
+    public Date getDateOfBirth()
     {
         return dateOfBirth;
     }

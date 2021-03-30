@@ -54,5 +54,14 @@ public class flowerShop {
         return address;
     }
 
+    @Override
+    public String toString() {
+        return "flowerShop{" +
+                "nameFlowerShop='" + nameFlowerShop + '\'' +
+                ", telNumber='" + telNumber + '\'' +
+                ", mailAddress='" + mailAddress + '\'' +
+                ", address=" + address +
+                '}';
+    }
 }
 
