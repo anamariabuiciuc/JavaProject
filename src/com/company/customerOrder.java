@@ -1,5 +1,5 @@
 package com.company;
-import java.text.ParseException;
+
 import java.util.Scanner;
 
 public class customerOrder {

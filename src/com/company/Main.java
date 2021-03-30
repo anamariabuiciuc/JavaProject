@@ -1,13 +1,12 @@
 package com.company;
 import java.time.Year;
 import java.util.ArrayList;
-import java.text.ParseException;
 import java.util.Scanner;
 //Flowershop Online
 //in progress
 public class Main {
 
-    public static void main(String[] args) throws ParseException{
+    public static void main(String[] args) {
 
       /* bouquet b1 = new bouquet("Buchet trandafir", 100, 9, "rosii");
        bouquet b2 = new bouquet("Buchet gladiole", 50, 15, "mov");
