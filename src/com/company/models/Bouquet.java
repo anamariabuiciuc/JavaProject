@@ -1,7 +1,10 @@
-package com.company;
+package com.company.Models;
+import com.company.Product;
+import com.company.Services.Message;
+
 import java.util.*;
 
-public class Bouquet extends Product implements Message{
+public class Bouquet extends Product implements Message {
     private String nameFlowers;
     private int numberOfFlowers;
     private String colorOfFlowers;

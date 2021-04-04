@@ -1,6 +1,6 @@
 package com.company;
 
-public class GiftBox extends Product {
+public class GiftBox extends com.company.Product {
 
     private String dimension; //small, medium, big
     private String type; //beauty (with beauty products), delicious (with sweets), deluxe (with champagne)

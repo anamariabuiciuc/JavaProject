@@ -1,9 +1,15 @@
-package com.company;
+package com.company.Models;
+import com.company.Models.Customer;
+import com.company.FlowerShop;
+import com.company.Product;
+import com.company.Recipient;
+import com.company.Services.Sale;
+
 import java.io.*;
 import java.util.*;
 import java.util.List;
 
-public class Order {
+public class Order implements Sale {
 
     private static int idOrder=0;
     private Date orderDate;
@@ -124,5 +130,11 @@ public class Order {
             index.message();
             System.out.println(" With love, "+buyer.firstName+"\n");
         }
+    }
+
+    public void showSale(){
+        if(getTotalCost() >= 500) System.out.println("For your next order you will have a voucher with 20% discount. Just use the code FLOWERSHOP20.");
+
+
     }
 }

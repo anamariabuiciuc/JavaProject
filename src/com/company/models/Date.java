@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Models;
 
 public class Date{
     private int day;

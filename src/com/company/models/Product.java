@@ -1,4 +1,6 @@
 package com.company;
+import com.company.Services.Message;
+
 import java.util.ArrayList;
 
 public class Product implements Message {

@@ -1,5 +1,8 @@
 package com.company;
 
+import com.company.Models.Address;
+import com.company.Services.Message;
+
 import java.util.Objects;
 
 public class FlowerShop implements Message {

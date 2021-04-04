@@ -1,6 +1,10 @@
-package com.company;
+package com.company.Models;
 
-public class Customer extends Person implements Message{
+import com.company.Models.Date;
+import com.company.Models.Person;
+import com.company.Services.Message;
+
+public class Customer extends Person implements Message {
 
 
     private Date dateOfBirth;

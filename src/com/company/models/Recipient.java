@@ -1,6 +1,10 @@
 package com.company;
 
-public class Recipient extends Person implements Message{
+import com.company.Models.Address;
+import com.company.Models.Person;
+import com.company.Services.Message;
+
+public class Recipient extends Person implements Message {
 
     protected Address addressRecipient;
 

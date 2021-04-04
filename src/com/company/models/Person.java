@@ -1,9 +1,9 @@
-package com.company;
+package com.company.Models;
 
 public class Person {
 
     protected String lastName;
-    protected String firstName;
+    public String firstName;
     protected char gender; //f or m (specified in your identity card)
     protected String telephoneNumber;
     protected String mailAddress;
