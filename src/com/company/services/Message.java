@@ -1,4 +1,5 @@
-package com.company;
+package com.company.Services;
+
 
 public interface Message {
 

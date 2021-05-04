@@ -1,19 +1,16 @@
 package com.company;
-import com.company.*;
-import com.company.Models.Address;
-import com.company.Models.Bouquet;
-import com.company.Models.Customer;
 import com.company.FlowerShop;
-import com.company.GiftBox;
+import com.company.Models.Address;
+import com.company.Product;
 import com.company.Models.Bouquet;
+import com.company.GiftBox;
+import com.company.Models.Customer;
+import com.company.Recipient;
 import com.company.Models.Date;
 import com.company.Models.Order;
-import com.company.Product;
-import com.company.Recipient;
+import com.company.ReadWriteCSV.ReadBouquet;
 
-import java.time.Year;
 import java.util.*;
-import java.util.concurrent.Flow;
 
 //Flowershop Online
 //in progress
@@ -32,7 +29,7 @@ public class Main {
         Bouquet colorfulTulips = new Bouquet("Bouquet of colorful tulips", 65.49, "Tulips", 9,"colorful");
 
         GiftBox beautySmall = new GiftBox("Small GiftBox with beauty products", 150, "small", "Beauty");
-        GiftBox beautyMedium = new GiftBox("Medium GiftBox with beauty products", 300, "medium", "Beauty");
+        GiftBox beautyMedium = new com.company.GiftBox("Medium GiftBox with beauty products", 300, "medium", "Beauty");
         GiftBox beautyLarge = new GiftBox("Large GiftBox with beauty products", 450, "large", "Beauty");
         GiftBox sweetsSmall = new GiftBox("Small GiftBox with sweets products", 50, "small", "Sweets");
         GiftBox deluxeSmall = new GiftBox("Small GiftBox with champagne and flowers", 150, "small", "Deluxe");
@@ -40,7 +37,8 @@ public class Main {
 
         Address adFlowerShop1 = new Address("Bacau", "Bacau", "Nicu Enea", "15", 600190);
         Address adFlowerShop2 = new Address("Bucuresti", "Sector 1", "Academiei", "12A", 729302);
-        FlowerShop f1 = new FlowerShop("Floraria din Povesti", "0234484909", "florariadinpovestibacau@gmail.com",adFlowerShop1);
+
+       FlowerShop f1 = new FlowerShop("Floraria din Povesti", "0234484909", "florariadinpovestibacau@gmail.com",adFlowerShop1);
         FlowerShop f2 = new FlowerShop("Floraria din Povesti", "0231849540", "florariadinpovestibucuresti@gmail.com", adFlowerShop2);
 
 
@@ -227,6 +225,8 @@ public class Main {
 
         System.out.println("\nThank you for you order! \n You will receive an email for confirmation in the next 5 minutes.");
 */
+
+        ReadBouquet.ReadProduct(fl2);
 
 
     }
