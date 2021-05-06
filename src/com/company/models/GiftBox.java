@@ -1,6 +1,8 @@
-package com.company;
+package com.company.Models;
 
-public class GiftBox extends com.company.Product {
+import com.company.Models.Product;
+
+public class GiftBox extends Product {
 
     private String dimension; //small, medium, big
     private String type; //beauty (with beauty products), delicious (with sweets), deluxe (with champagne)

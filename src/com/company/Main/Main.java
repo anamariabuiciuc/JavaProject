@@ -1,22 +1,25 @@
-package com.company;
-import com.company.FlowerShop;
+package com.company.Main;
 import com.company.Models.Address;
-import com.company.Product;
+import com.company.FlowerShop;
+import com.company.Models.Product;
 import com.company.Models.Bouquet;
-import com.company.GiftBox;
+import com.company.Models.GiftBox;
 import com.company.Models.Customer;
-import com.company.Recipient;
+import com.company.Models.Recipient;
 import com.company.Models.Date;
 import com.company.Models.Order;
-import com.company.ReadWriteCSV.ReadBouquet;
+import com.company.ReadWriteCSV.*;
+import com.company.Services.Audit;
+import com.company.Services.Menu;
 
+import java.io.IOException;
 import java.util.*;
 
 //Flowershop Online
 //in progress
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
       // order o1 = new order(101,d1,c1,f1);
        //System.out.println(o1.toString());
@@ -27,13 +30,30 @@ public class Main {
         Bouquet redTulips = new Bouquet("Bouquet of red tulips", 50, "Tulips",9, "red");
         Bouquet whiteTulips = new Bouquet("Bouquet of white tulips", 50.5, "Tulips",9,"white");
         Bouquet colorfulTulips = new Bouquet("Bouquet of colorful tulips", 65.49, "Tulips", 9,"colorful");
+        ArrayList <Bouquet> availablebouquets = new ArrayList<>();
+        availablebouquets.add(redRoses);
+        availablebouquets.add(whiteRoses);
+        availablebouquets.add(colorfulRoses);
+        availablebouquets.add(redTulips);
+        availablebouquets.add(whiteTulips);
+        availablebouquets.add(colorfulTulips);
 
         GiftBox beautySmall = new GiftBox("Small GiftBox with beauty products", 150, "small", "Beauty");
-        GiftBox beautyMedium = new com.company.GiftBox("Medium GiftBox with beauty products", 300, "medium", "Beauty");
+        GiftBox beautyMedium = new GiftBox("Medium GiftBox with beauty products", 300, "medium", "Beauty");
         GiftBox beautyLarge = new GiftBox("Large GiftBox with beauty products", 450, "large", "Beauty");
         GiftBox sweetsSmall = new GiftBox("Small GiftBox with sweets products", 50, "small", "Sweets");
         GiftBox deluxeSmall = new GiftBox("Small GiftBox with champagne and flowers", 150, "small", "Deluxe");
         GiftBox deluxeLarge = new GiftBox("Large GiftBox with champagne and flowers", 250, "large", "Deluxe");
+
+     /*   WriteGiftBox.writeGiftBox("Small GiftBox with beauty products", 150, "small", "Beauty");
+        WriteGiftBox.writeGiftBox("Medium GiftBox with beauty products", 300, "medium", "Beauty");
+        WriteGiftBox.writeGiftBox("Large GiftBox with beauty products", 450, "large", "Beauty");
+        WriteGiftBox.writeGiftBox("Small GiftBox with sweets products", 50, "small", "Sweets");
+        WriteGiftBox.writeGiftBox("Small GiftBox with champagne and flowers", 150, "small", "Deluxe");
+        WriteGiftBox.writeGiftBox("Large GiftBox with champagne and flowers", 250, "large", "Deluxe"); */
+
+
+
 
         Address adFlowerShop1 = new Address("Bacau", "Bacau", "Nicu Enea", "15", 600190);
         Address adFlowerShop2 = new Address("Bucuresti", "Sector 1", "Academiei", "12A", 729302);
@@ -42,8 +62,11 @@ public class Main {
         FlowerShop f2 = new FlowerShop("Floraria din Povesti", "0231849540", "florariadinpovestibucuresti@gmail.com", adFlowerShop2);
 
 
+
+
         Date dc1 = new Date(16,12,2000);
         Customer c1 = new Customer("Buiciuc", "Ana", 'f',  "0735239310", "anabuiciuc@gmail.com", dc1, "1028282910111");
+    //    WriteCustomer.writeCustomer("Buiciuc", "Ana", 'f',  "0735239310", "anabuiciuc@gmail.com", dc1, "1028282910111");
 
         Address adRecipient1 = new Address("Bacau", "Bacau", "Stefan cel Mare", "17B", 600191);
         Recipient r1 = new Recipient("Buiciuc", "Cristina", 'f', "0756941010", "cristinabuiciuc@yahoo.com", adRecipient1);
@@ -225,8 +248,29 @@ public class Main {
 
         System.out.println("\nThank you for you order! \n You will receive an email for confirmation in the next 5 minutes.");
 */
+        /*WriteBouquet.writeBouquet("Bouquet of red roses", 100, "Roses",9, "red");
+        WriteBouquet.writeBouquet("Bouquet of white roses", 99.9, "Roses",9, "white");
+        WriteBouquet.writeBouquet("Bouquet of colorful roses", 120, "Roses",9, "colorful");
+        WriteBouquet.writeBouquet("Bouquet of red tulips", 50, "Tulips",9, "red");
+        WriteBouquet.writeBouquet("Bouquet of white tulips", 50.5, "Tulips",9,"white");
+        WriteBouquet.writeBouquet("Bouquet of colorful tulips", 65.49, "Tulips", 9,"colorful");
+*/
+      //  ReadCSV.read("src/com/company/Files/bouquets.csv");
+      //  ReadCSV.read("src/com/company/Files/giftboxes.csv");
+      //   Menu.menu();
 
-        ReadBouquet.ReadProduct(fl2);
+       //  ReadCSV.read("src/com/company/Files/customers.csv");
+
+       // WriteAuthentication.writeAuthentication(c1, "parola123456");
+       // ReadCSV.read("src/com/company/Files/authentication.csv");
+
+      Menu.menu();
+
+      /* boolean c = SearchCSVLine.searchCsvLine(0,"anabuiciuc@gmail.com");
+       System.out.println(c);
+        boolean d = SearchCSVLine.searchCsvLine(1,"123456");
+        System.out.println(d); */
+
 
 
     }

@@ -1,7 +1,6 @@
-package com.company;
+package com.company.Models;
 import com.company.Services.Message;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Product implements Message {

@@ -1,8 +1,5 @@
 package com.company.Models;
-import com.company.Product;
 import com.company.Services.Message;
-
-import java.util.*;
 
 public class Bouquet extends Product implements Message {
     private String nameFlowers;

@@ -1,20 +1,20 @@
 package com.company.ReadWriteCSV;
-import com.company.Product;
+
 import com.company.Models.Bouquet;
-import com.company.GiftBox;
+import com.company.Models.GiftBox;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 
-public class ReadBouquet {
-    private final static String path = "src/com/company/Files/bouquets.csv";
+public class ReadGiftBox {
+    private final static String path = "src/com/company/Files/giftboxes.csv";
 
-    public static void ReadProduct(List<Product> bouqs) {
+    public static void readGiftBoxes() {
 
+
+        ArrayList<GiftBox> boxes = new ArrayList<>();
         BufferedReader bufferedReader;
         try{
 
@@ -22,7 +22,7 @@ public class ReadBouquet {
             String line = bufferedReader.readLine();
             while((line = bufferedReader.readLine()) != null) {
                 String[] strings = line.split(",");
-                bouqs.add(new Bouquet(strings[0],  Double.parseDouble(strings[1]), strings[2], Integer.parseInt(strings[3]),strings[4]));
+                boxes.add(new GiftBox(strings[0],  Double.parseDouble(strings[1]), strings[2], strings[3]));
 
             }
         }
@@ -30,6 +30,7 @@ public class ReadBouquet {
         catch (IOException e) {
 
             e.printStackTrace();
+            System.out.println("Oops. Something went wrong. :(");
         }
 
     }

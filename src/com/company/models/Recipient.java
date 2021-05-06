@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Models;
 
 import com.company.Models.Address;
 import com.company.Models.Person;

@@ -1,12 +1,7 @@
 package com.company.Models;
-import com.company.Models.Customer;
 import com.company.FlowerShop;
-import com.company.Product;
-import com.company.Recipient;
 import com.company.Services.Sale;
 
-import java.io.*;
-import java.util.*;
 import java.util.List;
 
 public class Order implements Sale {
