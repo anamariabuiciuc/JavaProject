@@ -2,12 +2,12 @@ package com.company.Services;
 
 import com.company.Models.Customer;
 
-public class Authentication {
+public class AuthenticationCustomers {
 
     Customer customer;
     String password;
 
-    Authentication(Customer customer, String password)
+    AuthenticationCustomers(Customer customer, String password)
     {
         this.customer = customer;
         this.password = password;

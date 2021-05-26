@@ -1,6 +1,6 @@
 package com.company.ReadWriteCSV;
 
-import com.company.Models.Date;
+import java.sql.Date;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -15,13 +15,14 @@ public class WriteCustomer {
 
             fileWriter = new FileWriter((path), true);
 
-            String stringBuilder = lastName +
+            String stringBuilder =
+                    identificationNumber +
+                            "," +lastName +
                     "," + firstName +
                     "," + gender +
                     "," + telephoneNumber +
                     "," + mailAddress +
                     "," + dateOfBirthday +
-                    "," + identificationNumber +
                     "\n";
 
             fileWriter.write(stringBuilder);

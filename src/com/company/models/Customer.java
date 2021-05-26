@@ -1,6 +1,5 @@
 package com.company.Models;
-
-import com.company.Models.Date;
+import java.sql.Date;
 import com.company.Models.Person;
 import com.company.Services.Message;
 
@@ -10,12 +9,18 @@ public class Customer extends Person implements Message {
     private Date dateOfBirth;
     private String identificationNumber; //cnp
 
-    public Customer( String lastName, String firstName, char gender, String telephoneNumber, String mailAddress ,Date dateOfBirthday, String identificationNumber)
+    public Customer(String lastName, String firstName, char gender, String telephoneNumber, String mailAddress, java.sql.Date dd, String identificationNumber)
     {
+
         super(lastName, firstName, gender, telephoneNumber, mailAddress);
-        this.dateOfBirth =  dateOfBirthday;
+        this.dateOfBirth = new Date(2000,1,1);
         this.identificationNumber = identificationNumber;
 
+
+    }
+
+    public Customer() {
+        super();
     }
 
    /* public Customer()
@@ -40,6 +45,7 @@ public class Customer extends Person implements Message {
 
 
 
+
     public Date getDateOfBirth()
     {
         return dateOfBirth;
@@ -49,6 +55,8 @@ public class Customer extends Person implements Message {
     {
         return identificationNumber;
     }
+
+
 
     @Override
     public String toString() {

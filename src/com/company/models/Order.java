@@ -2,6 +2,7 @@ package com.company.Models;
 import com.company.FlowerShop;
 import com.company.Services.Sale;
 
+import java.sql.Date;
 import java.util.List;
 
 public class Order implements Sale {
@@ -12,7 +13,7 @@ public class Order implements Sale {
     private Recipient recipient;
     private List<Product> products;
     private int numberOfProducts;
-    private FlowerShop seller;
+
 
 
 
@@ -24,7 +25,7 @@ public class Order implements Sale {
 */
 
 
-    public Order(int idOrder, Date orderDate, Customer buyer, Recipient recipient, int numberOfProducts, List<Product> products,FlowerShop seller)
+    public Order(int idOrder, Date orderDate, Customer buyer, Recipient recipient, int numberOfProducts, List<Product> products)
     {
         idOrder++;
         this.idOrder = idOrder;
@@ -33,7 +34,7 @@ public class Order implements Sale {
         this.recipient = recipient;
         this.numberOfProducts = numberOfProducts;
         this.products = products;
-        this.seller = seller;
+
     }
 
 
@@ -66,10 +67,6 @@ public class Order implements Sale {
 
     public void setProducts() {this.products = products;}
 
-    public void setSeller()
-    {
-        this.seller = seller;
-    }
 
     public int getIdOrder() {
         return idOrder;
@@ -87,9 +84,7 @@ public class Order implements Sale {
         return recipient;
     }
 
-    public FlowerShop getSeller() {
-        return seller;
-    }
+
 
     public int getNumberOfProducts() {
         return numberOfProducts;
@@ -106,7 +101,7 @@ public class Order implements Sale {
                 ", \nRecipient: " + recipient +
                 ", \nProducts: " + products +
                 //", numberOfProducts=" + numberOfProducts +
-                ", \nSeller: " + seller + "\n"; }
+                "\n"; }
 
 
     public double getTotalCost() {

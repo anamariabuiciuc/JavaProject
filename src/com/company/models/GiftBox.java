@@ -14,6 +14,10 @@ public class GiftBox extends Product {
         this.type = type;
     }
 
+    public GiftBox() {
+
+    }
+
 
     public void setDimension()
     {

@@ -1,20 +1,12 @@
 package com.company.Models;
 
-public class Date{
+public class Data extends java.util.Date {
     private int day;
     private int month;
     private int year;
 
 
-  /*  public Date(int day, int month, int year )
-    {
-        this.day = day;
-        this.month = month;
-        this.year = year;
-    }
-*/
-
-    public Date(int day, int month, int year)
+    public Data(int day, int month, int year)
     {
         this.day = day;
         this.month = month;

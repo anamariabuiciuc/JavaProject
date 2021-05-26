@@ -16,6 +16,10 @@ public class Person {
         this.mailAddress = mailAddress;
     }
 
+    public Person() {
+
+    }
+
     public void setLastName() {
         this.lastName = lastName;
     }

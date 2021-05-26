@@ -2,7 +2,139 @@ nume_actiune,timestamp
 
 anabuiciuc@gmail.com logged in.,06/05/2021 19:22:41
 anabuiciuc@gmail.com tried to log in but failed.,06/05/2021 19:22:51
-gher@gmail.com tried to log in but it's not registered.,06/05/2021 19:26:54
+gher@gmail.com tried to log in but it is not registered.,06/05/2021 19:26:54
 Seen list of products.,06/05/2021 19:29:50
 Seen list of products.,06/05/2021 20:03:44
 anabuiciuc@gmail.com tried to log in but failed.,06/05/2021 20:04:03
+ana.buiciuc@gmail.com tried to log in but it is not registered.,24/05/2021 18:36:11
+Successfully inserted RedRoses Bouquet in DB.,24/05/2021 18:41:39
+Successfully inserted WhiteRoses Bouquet in DB.,24/05/2021 18:58:16
+Seen list of products.,24/05/2021 19:08:56
+Successfully deleted all bouquest with Price: 101.0 RON from DB.,24/05/2021 19:29:27
+Seen list of products.,24/05/2021 19:29:35
+Seen list of products.,25/05/2021 14:24:30
+Successfully applied 40.0% discount for all bouquest with Red Roses from DB. ,25/05/2021 14:32:31
+Seen list of products.,25/05/2021 14:32:55
+Successfully applied 10.0% discount for all bouquest with White Roses from DB. ,25/05/2021 14:35:12
+Successfully applied 20.0% discount for all bouquest with Red Roses from DB. ,25/05/2021 14:38:00
+Successfully updated the price for all bouquest with White Roses from DB. New price per piece: 9.0 RON,25/05/2021 14:48:02
+Seen list of products.,25/05/2021 14:48:41
+Seen list of products.,25/05/2021 14:53:08
+Successfully inserted ColorfulRoses Bouquet in DB.,25/05/2021 14:53:59
+Seen list of products.,25/05/2021 14:54:15
+Successfully inserted RedTulips Bouquet in DB.,25/05/2021 14:55:28
+Successfully inserted YellowTulips Bouquet in DB.,25/05/2021 14:56:05
+Successfully inserted WhiteTulips Bouquet in DB.,25/05/2021 14:56:50
+Successfully inserted ColorfulTulips Bouquet in DB.,25/05/2021 14:57:38
+Successfully inserted BigRedRoses Bouquet in DB.,25/05/2021 14:59:25
+Successfully inserted Popescu Raau id: 1092667092174 in our list of customers in DB.,25/05/2021 15:28:12
+Seen the list of customers.,25/05/2021 15:39:18
+Successfully deleted BigRedRoses Bouquet from DB.,25/05/2021 16:07:45
+Successfully inserted BigRedRoses Bouquet in DB.,25/05/2021 16:15:44
+Seen list of products.,25/05/2021 16:17:02
+Seen list of products.,25/05/2021 16:27:54
+Seen list of products.,25/05/2021 16:27:57
+admin@florariadinpovesti.ro logged in.,25/05/2021 16:35:42
+Successfully inserted Ionescu Alex id: 1028602975541 in our list of customers in DB.,25/05/2021 17:01:48
+Successfully inserted Rosu Rebeca id: 2089360019231 in our list of customers in DB.,25/05/2021 17:06:58
+Successfully inserted Matache Delia id: 2098378654109 in our list of customers in DB.,25/05/2021 17:10:00
+Successfully inserted Matache Razvan id: 1009180411992 in our list of customers in DB.,25/05/2021 17:13:14
+Successfully inserted Buiciuc Phoebe id: 6010620881011 in our list of customers in DB.,25/05/2021 17:19:08
+Successfully inserted Cancel Denisa id: 6920423301129 in our list of customers in DB.,25/05/2021 17:22:12
+rebeca_rosu@yahoo.ro logged in.,25/05/2021 17:55:23
+Seen list of products.,25/05/2021 20:40:29
+Seen list of products.,25/05/2021 22:15:07
+Seen list of products.,25/05/2021 22:17:34
+Successfully inserted Lupescu Denis id: 5001960197162 in our list of customers in DB.,25/05/2021 22:36:52
+Successfully deleted customer with Id. number 5001960197162 from DB.,25/05/2021 22:38:04
+Successfully inserted CoffeeCareSet GiftBox in DB.,26/05/2021 11:10:01
+Successfully updated the price (100.0RON) for CoffeeCareSet giftbox in DB.,26/05/2021 11:11:17
+Successfully inserted CoconutSet GiftBox in DB.,26/05/2021 11:12:40
+Successfully deleted CoconutSet GiftBox from DB.,26/05/2021 11:13:20
+Successfully inserted FlorariaDinPovestiBacau flowershop from Bacau in DB.,26/05/2021 12:46:39
+Successfully inserted FlorariaDinPovesti flowershop from Bacau in DB.,26/05/2021 12:48:51
+Successfully inserted FlorariaDinPovestiBucuresti flowershop from Sector1 in DB.,26/05/2021 12:51:48
+Successfully inserted Matache Monica  in recipient list in DB.,26/05/2021 12:56:08
+Successfully inserted Popa Ioana  in recipient list in DB.,26/05/2021 13:00:38
+Successfully inserted Rosu Diana  in recipient list in DB.,26/05/2021 13:02:49
+Successfully inserted Popa Diana  in recipient list in DB.,26/05/2021 13:08:36
+Successfully inserted Macovei Diana  in recipient list in DB.,26/05/2021 13:13:04
+Successfully inserted a new order from customer with id 1092667092174in DB.,26/05/2021 13:13:34
+Successfully inserted Buiciuc Roxana  in recipient list in DB.,26/05/2021 13:16:02
+Successfully inserted a new order from customer with id 6028282910111 in DB.,26/05/2021 13:16:34
+Seen list of products.,26/05/2021 14:01:50
+Seen list of products.,26/05/2021 14:02:13
+Successfully inserted Popescu Neculai id: 1080187109172 in our list of customers in DB.,26/05/2021 14:03:56
+Successfully inserted Buiciuc Cristina  in recipient list in DB.,26/05/2021 14:05:30
+Successfully inserted a new order from customer with id 1080187109172 in DB.,26/05/2021 14:05:52
+Seen list of products.,26/05/2021 19:42:50
+Seen list of products.,26/05/2021 19:45:33
+Displayed all the orders from DB.,26/05/2021 22:16:42
+Seen list of products.,26/05/2021 22:20:36
+Seen list of products.,26/05/2021 22:20:37
+Seen list of products.,26/05/2021 22:20:37
+Seen list of products.,26/05/2021 22:20:37
+Seen list of products.,26/05/2021 22:20:37
+Seen list of products.,26/05/2021 22:20:37
+Seen list of products.,26/05/2021 22:20:37
+Seen list of products.,26/05/2021 22:20:38
+Seen list of products.,26/05/2021 22:20:38
+Seen list of products.,26/05/2021 22:20:38
+Seen list of products.,26/05/2021 22:20:38
+Seen list of products.,26/05/2021 22:20:38
+Seen list of products.,26/05/2021 22:20:38
+Seen list of products.,26/05/2021 22:20:38
+Seen list of products.,26/05/2021 22:20:38
+Seen list of products.,26/05/2021 22:20:38
+Seen list of products.,26/05/2021 22:20:38
+Seen list of products.,26/05/2021 22:20:38
+Seen list of products.,26/05/2021 22:20:38
+Seen list of products.,26/05/2021 22:20:39
+Seen list of products.,26/05/2021 22:20:39
+Seen list of products.,26/05/2021 22:20:39
+Seen list of products.,26/05/2021 22:20:39
+Seen list of products.,26/05/2021 22:20:39
+Seen list of products.,26/05/2021 22:20:39
+Seen list of products.,26/05/2021 22:20:39
+Seen list of products.,26/05/2021 22:20:39
+Seen list of products.,26/05/2021 22:20:39
+Seen list of products.,26/05/2021 22:20:39
+Seen list of products.,26/05/2021 22:20:39
+Seen list of products.,26/05/2021 22:20:39
+Seen list of products.,26/05/2021 22:20:39
+Seen list of products.,26/05/2021 22:20:39
+Seen list of products.,26/05/2021 22:20:40
+Seen list of products.,26/05/2021 22:20:40
+Seen list of products.,26/05/2021 22:20:40
+Seen list of products.,26/05/2021 22:20:40
+Seen list of products.,26/05/2021 22:20:40
+Seen list of products.,26/05/2021 22:20:40
+Seen list of products.,26/05/2021 22:20:40
+Seen list of products.,26/05/2021 22:20:40
+Seen list of products.,26/05/2021 22:20:40
+Seen list of products.,26/05/2021 22:20:40
+Seen list of products.,26/05/2021 22:20:40
+Seen list of products.,26/05/2021 22:20:40
+Seen list of products.,26/05/2021 22:20:40
+Seen list of products.,26/05/2021 22:20:41
+Seen list of products.,26/05/2021 22:20:41
+Seen list of products.,26/05/2021 22:20:41
+Seen list of products.,26/05/2021 22:20:41
+Seen list of products.,26/05/2021 22:20:41
+Seen list of products.,26/05/2021 22:20:41
+Seen list of products.,26/05/2021 22:20:41
+Seen list of products.,26/05/2021 22:20:41
+Seen list of products.,26/05/2021 22:20:41
+Seen list of products.,26/05/2021 22:20:41
+Seen list of products.,26/05/2021 22:20:41
+Seen list of products.,26/05/2021 22:22:50
+Seen list of products.,26/05/2021 22:23:47
+Seen audit from DB.,26/05/2021 22:24:45
+Successfully updated the date of birth for Customer with ID 2098378654109in DB.,26/05/2021 22:26:18
+Successfully inserted Iliescu Rodica id: 2650909910182 in our list of customers in DB.,26/05/2021 22:30:59
+Successfully inserted Straub Bogdan id: 5980716910617 in our list of customers in DB.,26/05/2021 22:35:13
+Successfully deleted customer with Id. number 5980716910617 from DB.,26/05/2021 22:35:47
+Displayed all the orders from DB.,26/05/2021 22:36:03
+Successfully inserted Anghel Tinca id: 6970917190191 in our list of customers in DB.,26/05/2021 22:37:15
+Successfully inserted Ghenea Larisa id: 6930512016171 in our list of customers in DB.,26/05/2021 22:38:38
+Seen audit from DB.,26/05/2021 22:39:00

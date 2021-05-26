@@ -13,6 +13,20 @@ public class Bouquet extends Product implements Message {
         this.colorOfFlowers = colorOfFlowers;
     }
 
+    public Bouquet() {
+        super();
+    }
+
+    @Override
+    public void setProductName() {
+        super.setProductName();
+    }
+
+    @Override
+    public void setProductPrice() {
+        super.setProductPrice();
+    }
+
     public void setNameFlowers(String nameFlowers) {
        this.nameFlowers = nameFlowers;
     }
@@ -25,6 +39,16 @@ public class Bouquet extends Product implements Message {
     public void setColorOfFlowers()
     {
         this.colorOfFlowers = colorOfFlowers;
+    }
+
+    @Override
+    public String getProductName() {
+        return super.getProductName();
+    }
+
+    @Override
+    public double getProductPrice() {
+        return super.getProductPrice();
     }
 
     public String getNameFlowers() {
@@ -48,7 +72,7 @@ public class Bouquet extends Product implements Message {
                       + productPrice + " RON";
     }
 
-
+    @Override
     public void message()
     {  //This message will be printed on a card that will be given with the bouquet.
         System.out.println("Because flowers make us happy. :) ");

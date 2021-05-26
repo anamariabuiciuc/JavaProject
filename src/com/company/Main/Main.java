@@ -1,16 +1,16 @@
 package com.company.Main;
+import com.company.Database.BouquetDB;
+import com.company.Database.OrderDB;
 import com.company.Models.Address;
 import com.company.FlowerShop;
 import com.company.Models.Product;
 import com.company.Models.Bouquet;
 import com.company.Models.GiftBox;
-import com.company.Models.Customer;
 import com.company.Models.Recipient;
-import com.company.Models.Date;
-import com.company.Models.Order;
-import com.company.ReadWriteCSV.*;
-import com.company.Services.Audit;
 import com.company.Services.Menu;
+
+import java.sql.Date;
+
 
 import java.io.IOException;
 import java.util.*;
@@ -20,6 +20,9 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) throws IOException {
+
+        Menu.menu();
+        /*
 
       // order o1 = new order(101,d1,c1,f1);
        //System.out.println(o1.toString());
@@ -43,7 +46,7 @@ public class Main {
         GiftBox beautyLarge = new GiftBox("Large GiftBox with beauty products", 450, "large", "Beauty");
         GiftBox sweetsSmall = new GiftBox("Small GiftBox with sweets products", 50, "small", "Sweets");
         GiftBox deluxeSmall = new GiftBox("Small GiftBox with champagne and flowers", 150, "small", "Deluxe");
-        GiftBox deluxeLarge = new GiftBox("Large GiftBox with champagne and flowers", 250, "large", "Deluxe");
+        GiftBox deluxeLarge = new GiftBox("Large GiftBox with champagne and flowers", 250, "large", "Deluxe");*/
 
      /*   WriteGiftBox.writeGiftBox("Small GiftBox with beauty products", 150, "small", "Beauty");
         WriteGiftBox.writeGiftBox("Medium GiftBox with beauty products", 300, "medium", "Beauty");
@@ -55,20 +58,20 @@ public class Main {
 
 
 
-        Address adFlowerShop1 = new Address("Bacau", "Bacau", "Nicu Enea", "15", 600190);
-        Address adFlowerShop2 = new Address("Bucuresti", "Sector 1", "Academiei", "12A", 729302);
+    //    Address adFlowerShop1 = new Address("Bacau", "Bacau", "Nicu Enea", "15", 600190);
+    //    Address adFlowerShop2 = new Address("Bucuresti", "Sector 1", "Academiei", "12A", 729302);
 
-       FlowerShop f1 = new FlowerShop("Floraria din Povesti", "0234484909", "florariadinpovestibacau@gmail.com",adFlowerShop1);
-        FlowerShop f2 = new FlowerShop("Floraria din Povesti", "0231849540", "florariadinpovestibucuresti@gmail.com", adFlowerShop2);
-
-
+     //  FlowerShop f1 = new FlowerShop("Floraria din Povesti", "0234484909", "florariadinpovestibacau@gmail.com",adFlowerShop1);
+     //   FlowerShop f2 = new FlowerShop("Floraria din Povesti", "0231849540", "florariadinpovestibucuresti@gmail.com", adFlowerShop2);
 
 
-        Date dc1 = new Date(16,12,2000);
-        Customer c1 = new Customer("Buiciuc", "Ana", 'f',  "0735239310", "anabuiciuc@gmail.com", dc1, "1028282910111");
+
+
+      //  Date dc1 = new Date(16,12,2000);
+       // Customer c1 = new Customer("Buiciuc", "Ana", 'f',  "0735239310", "anabuiciuc@gmail.com", dc1, "1028282910111");
     //    WriteCustomer.writeCustomer("Buiciuc", "Ana", 'f',  "0735239310", "anabuiciuc@gmail.com", dc1, "1028282910111");
 
-        Address adRecipient1 = new Address("Bacau", "Bacau", "Stefan cel Mare", "17B", 600191);
+     /*   Address adRecipient1 = new Address("Bacau", "Bacau", "Stefan cel Mare", "17B", 600191);
         Recipient r1 = new Recipient("Buiciuc", "Cristina", 'f', "0756941010", "cristinabuiciuc@yahoo.com", adRecipient1);
 
         Address adRecipient2 = new Address("Bucuresti", "Sector 1", "Calea Grivitei", "178", 746091);
@@ -77,14 +80,14 @@ public class Main {
         Date dorder1 = new Date(30,3,2021);
         List<Product> fl1 = new ArrayList<>();
         fl1.add(whiteRoses); fl1.add(colorfulTulips); fl1.add(deluxeLarge);
-        Order order1 = new Order(0,dorder1,c1,r1,3,fl1,f1);
-        System.out.println(order1);
+       // Order order1 = new Order(0,dorder1,c1,r1,3,fl1,f1);
+       // System.out.println(order1);
 
         Date dorder2 = new Date(2,4,2021);
         List<Product> fl2 = new ArrayList<>();
-        fl2.add(sweetsSmall); fl2.add(deluxeSmall);
-        Order order2 = new Order(1, dorder2, c1, r2, 2, fl2,f2);
-        System.out.println(order2);
+        fl2.add(sweetsSmall); fl2.add(deluxeSmall);*/
+      //  Order order2 = new Order(1, dorder2, c1, r2, 2, fl2,f2);
+      //  System.out.println(order2);
 
      //   System.out.println("Your total: "+ordernew.getTotalCost());
        // System.out.println("\nYour products includes these cards: ");
@@ -264,12 +267,17 @@ public class Main {
        // WriteAuthentication.writeAuthentication(c1, "parola123456");
        // ReadCSV.read("src/com/company/Files/authentication.csv");
 
-      Menu.menu();
 
       /* boolean c = SearchCSVLine.searchCsvLine(0,"anabuiciuc@gmail.com");
        System.out.println(c);
         boolean d = SearchCSVLine.searchCsvLine(1,"123456");
         System.out.println(d); */
+      //  Date dd = new Date(1996,4,12);
+     //   Customer c = new Customer("Cristea", "Alex", 'm',"0799843971", "cristea.alex@yahoo.com",  dd, "1076159008131");
+     //   DbConnection.AddCustomer(c);
+
+
+
 
 
 

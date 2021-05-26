@@ -14,6 +14,10 @@ public class Product implements Message {
         this.productPrice = productPrice;
     }
 
+    public Product() {
+
+    }
+
    /* public Product()
     {
         this.productName = "?";
@@ -68,7 +72,7 @@ public class Product implements Message {
     }
 
 
-
-    public void message() {}
+     @Override
+     public void message(){};
 
 }
