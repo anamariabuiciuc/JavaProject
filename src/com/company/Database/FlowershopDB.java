@@ -3,6 +3,7 @@ package com.company.Database;
 import com.company.FlowerShop;
 import com.company.Models.Customer;
 import com.company.ReadWriteCSV.WriteAuthentication;
+import com.company.ReadWriteCSV.WriteFlowerShopAuthentication;
 import com.company.Services.Audit;
 
 import java.sql.*;
@@ -61,8 +62,9 @@ public class FlowershopDB {
                 System.out.println("Successful operation! :) \n");
                 Audit.audit("Successfully inserted " + name + " flowershop from "+town+" in DB.");
                 FlowerShop flowershop= new FlowerShop(name,telephone,mail,county,town,street,nr,postalCode);
-                //Create account for the flowershop
-                //WriteAuthentication.writeAuthentication(flowershop);
+                //Create account
+                WriteFlowerShopAuthentication.writeAuthentication(flowershop);
+
             } else
                 System.out.println("Oh, no. Something went wrong. :( \n");
 
@@ -219,7 +221,7 @@ public class FlowershopDB {
                         System.out.println("Successful connection! :) \n ");
                         System.out.println("Successful operation! :) \n");
                         Audit.audit("Successfully updated the address for Flowershop " + nameShop + "in DB.");
-                    } else System.out.println("Oh, no. Something went wrong. :( \n");
+                    }
                     break;
             }
         } catch (SQLException throwables) {
